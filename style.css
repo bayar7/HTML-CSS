@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --primary-color: #6c63ff;
+    --secondary-color: #3f3d56;
+    --dark-gray: #333;
+    --light-gray: #b4b4b4;
+    --purple-color: #c5c9f9;
+    --light-pink-color: #fee7ef;
+    --dark-pink-color: #f9a0bf;
+
+}
+
+/* GLOBAL STYLE */
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+p {
+    color: var(--dark-gray);
+    overflow-wrap: break-word;
+    line-height: 1.5;
+}
+
+section {
+    padding: 3.5rem 0;
+}
+
+section .container {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+}
+
+section .left,
+section .right {
+    padding: 2rem;
+    flex: 1;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.filled-btn {
+    background-color: var(--secondary-color);
+    font-size: 1.25rem;
+    color: #fff;
+    letter-spacing: 2px;
+    border-radius: 10px;
+}
+
+.filled-btn:hover{
+    background-color: var(--primary-color);
+}
+
+.gradient-bg {
+    background: linear-gradient(
+        to right, 
+        var(--light-pink-color), 
+        var(--purple-color)
+    );
+}
+
+/* Header */
+
+header {
+    /* padding: 0 2rem; */
+    background-color: #fff;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .logo a {
+    color: var(--light-gray);
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .links li a {
+    color: var(--dark-gray);
+    font-size: 1.2rem;
+}
+
+.navbar .links li a:hover {
+    color: var(--primary-color);
+}
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 670px;
+    padding: 0;
+    display: flex;
+    background-color:#fbfbfb;
+}
+
+.hero .left {
+    width: 50%;
+    background-image: url("./images/hero_bg.png");
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero img {
+    height: 50%;
+    object-fit: contain;
+}
+
+.hero .right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+}
+
+herp p{
+    margin-top: 1.5rem;
+    max-width: 500px;
+    min-width: 300px;
+    font-weight: bold;
+}
+
+.hero button {
+    margin-top: 4rem;
+    padding: 10px 30px;
+}
