@@ -7,7 +7,7 @@
 
 :root {
   --primary-color: #6c63ff;
-  --secondary-color: #3f3d56;
+  --secondary-color: #978eff;
   --dark-gray: #333;
   --light-gray: #b4b4b4;
   --purple-color: #c5c9f9;
@@ -59,7 +59,7 @@ button {
 }
 
 .filled-btn {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   font-size: 1.25rem;
   color: #fff;
   letter-spacing: 2px;
@@ -67,7 +67,7 @@ button {
 }
 
 .filled-btn:hover {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 .outline-btn {
@@ -321,4 +321,27 @@ header {
 .experience img {
   width: 100%;
   border-radius: 20px;
+}
+
+/* CONTACT SECTION */
+.contact .cards {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.contact .card {
+  min-height: 100px;
+  padding: 40px 30px;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border-radius: 20px;
+}
+
+.contact .card h2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 1.25rem;
 }
