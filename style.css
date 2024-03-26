@@ -237,3 +237,27 @@ herp p{
     word-break: break-all;
     margin-bottom: 20px;
 }
+
+/* ABOUT SECTION */
+.about-us h1 {
+    font-size: 3rem;
+}
+
+.about-us p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.about-us button {
+    margin-top: 40px;
+    padding: 10px 50px;
+}
+
+.about-us .right {
+    flex: 2;
+}
+
+.about-us img {
+    width: 100%;
+}
