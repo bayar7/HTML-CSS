@@ -269,6 +269,7 @@ header {
 
 .services h1 {
   font-size: 3rem;
+  text-align: center;
 }
 
 .services .cards {
@@ -287,4 +288,18 @@ header {
 
 .services img {
   width: 100%;
+}
+
+.services .card h2 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.services .card p {
+  margin-top: 1rem;
+}
+
+.services .card button {
+  padding: 8px 45px;
+  margin-top: 1.5rem;
 }
