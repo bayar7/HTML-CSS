@@ -13,7 +13,7 @@
     --purple-color: #c5c9f9;
     --light-pink-color: #fee7ef;
     --dark-pink-color: #f9a0bf;
-
+    --light-purple-color: #ffefff;
 }
 
 /* GLOBAL STYLE */
@@ -70,6 +70,21 @@ button {
     background-color: var(--primary-color);
 }
 
+.outline-btn {
+    padding: 10px 30px;
+    background-color: #fff;
+    border: 2px solid var(--primary-color);
+    font-weight: bold;
+    border-radius: 6px;
+    color: var(--primary-color);
+    font-size: 15px;
+}
+
+.outline-btn:hover {
+    background-color: var(--primary-color);
+    color: #fff ;
+}
+
 .gradient-bg {
     background: linear-gradient(
         to right, 
@@ -81,7 +96,7 @@ button {
 /* Header */
 
 header {
-    /* padding: 0 2rem; */
+    padding: 0 2rem;
     background-color: #fff;
 }
 
@@ -165,4 +180,60 @@ herp p{
 .hero button {
     margin-top: 4rem;
     padding: 10px 30px;
+}
+
+/* WORK SECTION */
+
+.work {
+    text-align: center;
+}
+
+.work .container {
+    flex-direction: column;
+}
+
+.work h1{
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+}
+
+.work .cards {
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.work .card {
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 2px solid var(--dark-pink-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    color: var(--primary-color);
+}
+
+.work .card .number {
+    width: 50px;
+    height: 50px;
+    background-color: var(--light-purple-color);
+    border-radius: 50%;
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.work .card h2 {
+    font-size: 1.25rem;
+    margin: 20px 0;
+}
+
+.work .card p {
+    word-break: break-all;
+    margin-bottom: 20px;
 }
